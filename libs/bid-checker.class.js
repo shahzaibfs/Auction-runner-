@@ -47,7 +47,6 @@ class BidChecker extends EventEmitter {
 
   cleanup(cb) {
     if (this.timeoutCounter <= 0) {
-      console.log("Deleting on Last one");
       cb();
     }
   }
